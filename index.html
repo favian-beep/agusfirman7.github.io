@@ -448,7 +448,7 @@
 						evening();
 						break;
 					case 'midnight':
-						$('.kontrol input').prop('checked', false);
+						$('.kontrol input').('checked', false);
 						$("#customRadio8").prop('checked',true);
 						midnight();
 						break;
@@ -515,7 +515,7 @@
 					setTimeout(function() { createNote("Jadian Yuk Woeyy :v"); }, 5000);
 				}
 				else if(localStorage.getItem("manualColor")=="#000000"){
-					setTimeout(function() { createNote("Jadian Yuk Njirr, Awokwokwok :v"); }, 5000);
+					setTimeout(function() { createNote("Jadian Yuk, Awokwokwok :v"); }, 5000);
 				}
 			}
 			function createNote(isi){
@@ -535,7 +535,7 @@
 				    .start()
 				    .set({
 				        characters: '░░█ /<▒▓▒ ▒░▒█/ █/▒ ▒▓/█▒ ▓▒░▓ ██░ ▒░▓░ ▒░▓█',
-				        speed: 220
+				        speed: 120
 				    });
 				    localStorage.setItem("manualColor", "#0079FF");
 			}
